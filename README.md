@@ -1,4 +1,4 @@
-# java_Day1
+# java
 
 1. FIZZ BUZZ
 import java.util.*;
