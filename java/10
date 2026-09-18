@@ -1,0 +1,21 @@
+10. CONVERT BINARY NUMBER TO INTEGER
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a binary number: ");
+        String binary = sc.next();
+
+        int result = 0;
+
+        for (int i = 0; i < binary.length(); i++) {
+            result = result * 2 + (binary.charAt(i) - '0');
+        }
+
+        System.out.println("Decimal value: " + result);
+
+        sc.close();
+    }
+}
