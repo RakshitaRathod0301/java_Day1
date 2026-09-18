@@ -1,0 +1,29 @@
+2. PALINDROME
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int x = sc.nextInt();
+
+        if (x < 0) {
+            System.out.println(false);
+            return;
+        }
+
+        int original = x;
+        int reversed = 0;
+
+        while (x != 0) {
+            int digit = x % 10;
+            reversed = reversed * 10 + digit;
+            x /= 10;
+        }
+
+        System.out.println(original == reversed);
+
+        sc.close();
+    }
+}
